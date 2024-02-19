@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
   void onAddPressed() {
     setState(() {
       todos.add([titleTextController.text, false]);
+      titleTextController.clear();
     });
     Navigator.pop(context);
   }
